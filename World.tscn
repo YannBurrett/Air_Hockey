@@ -447,7 +447,7 @@ disabled = false
 
 [node name="Camera" type="Camera" parent="." index="1"]
 
-transform = Transform( 1, 0, 0, 0, 0.573577, 0.819152, 0, -0.819152, 0.573577, -1, 16, 17 )
+transform = Transform( 1, 0, 0, 0, 0.819152, 0.573576, 0, -0.573576, 0.819152, 0, 13, 20 )
 keep_aspect = 1
 cull_mask = 1048575
 environment = null
@@ -460,6 +460,7 @@ fov = 70.0
 size = 1.0
 near = 0.05
 far = 100.0
+_sections_unfolded = [ "Transform" ]
 
 [node name="Player" type="RigidBody" parent="." index="2"]
 
@@ -525,8 +526,8 @@ collision_layer = 1
 collision_mask = 1
 mode = 0
 mass = 7.0
-friction = 1.0
-bounce = 0.0
+friction = 0.25
+bounce = 0.8
 gravity_scale = 1.0
 custom_integrator = false
 continuous_cd = false
@@ -537,9 +538,9 @@ can_sleep = true
 axis_lock_linear_x = false
 axis_lock_linear_y = true
 axis_lock_linear_z = false
-axis_lock_angular_x = false
-axis_lock_angular_y = false
-axis_lock_angular_z = false
+axis_lock_angular_x = true
+axis_lock_angular_y = true
+axis_lock_angular_z = true
 linear_velocity = Vector3( 0, 0, 0 )
 linear_damp = -1.0
 angular_velocity = Vector3( 0, 0, 0 )
